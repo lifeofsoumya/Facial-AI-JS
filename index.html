@@ -9,6 +9,7 @@
   <script defer src="face-api.min.js"></script>
   <script defer src="script.js"></script>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
     body {
       margin: 0;
       padding: 0;
@@ -17,6 +18,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      font-family: 'Poppins', sans-serif;
     }
 
     canvas {
@@ -62,23 +64,25 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      
     }
 
-    .noti-box span {
+    .noti-box #popspan {
       text-align: center;
       background-color: white;
       padding: 20px 30px;
       border-radius: 9px;
     }
+
   </style>
 </head>
 
 <body>
   <!-- <button class="ai-start-btn" onclick="startVideo()">Start AI</button> -->
   <div class="noti-box">
-    <span>
-      <p>Click on the 'Allow' to let the AI access the Camera</p>
-      <button onclick="popOff()">Okay</button>
+    <span id="popspan">
+      <p>Click on <span style="color:#c13016;">'Start AI'</span> & <span style="color:#165CC1;">'Allow'</span> to let the AI access the Camera</p>
+      <button class="ai-start-btn" onclick="popOff()">Okay</button>
     </span>
   </div>
 
