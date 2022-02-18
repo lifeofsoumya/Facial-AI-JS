@@ -25,7 +25,6 @@
 
     .vidbox {
       border: 5px solid #f2c500;
-
       border-radius: 9px;
       background-color: #f2c500;
       padding: 0 10px;
@@ -54,16 +53,52 @@
       border: 2px black solid;
       margin-bottom: 20px;
     }
+
+    .noti-box {
+      background-color: #151822ce;
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .noti-box span {
+      text-align: center;
+      background-color: white;
+      padding: 20px 30px;
+      border-radius: 9px;
+    }
   </style>
 </head>
 
 <body>
   <!-- <button class="ai-start-btn" onclick="startVideo()">Start AI</button> -->
+  <div class="noti-box">
+    <span>
+      <p>Click on the 'Allow' to let the AI access the Camera</p>
+      <button onclick="popOff()">Okay</button>
+    </span>
+  </div>
 
   <input type="button" class="ai-start-btn" onclick="startVideo()" value="Start AI"></input>
   <div class="vidbox">
     <video id="video" width="720" height="560" autoplay muted></video>
   </div>
+
+  <script>
+    function popOff() {
+
+      document.body.addEventListener('click', function (event) {
+        console.log('clicked')
+        document.querySelector(".noti-box").style.display = "none";
+      })
+    }
+    popOff()
+
+
+  </script>
 </body>
 
 </html>
