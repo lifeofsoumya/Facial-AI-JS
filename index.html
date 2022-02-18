@@ -10,6 +10,7 @@
   <script defer src="script.js"></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
     body {
       margin: 0;
       padding: 0;
@@ -64,7 +65,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      
+
     }
 
     .noti-box #popspan {
@@ -74,8 +75,11 @@
       border-radius: 9px;
     }
 
-    @media screen and (max-width:500px){
-      .noti-box{
+    @media screen and (max-width:500px) {
+      .noti-box {
+        display: none;
+      }
+      .vidicon{
         display: none;
       }
     }
@@ -86,7 +90,8 @@
   <!-- <button class="ai-start-btn" onclick="startVideo()">Start AI</button> -->
   <div class="noti-box">
     <span id="popspan">
-      <p>Click on <span style="color:#c13016;">'Start AI'</span> & <span style="color:#165CC1;">'Allow'</span> to let the AI access the Camera</p>
+      <p>Click on <span style="color:#c13016;">'Start AI'</span> & <span style="color:#165CC1;">'Allow'</span> to let
+        the AI access the Camera</p>
       <button class="ai-start-btn" onclick="popOff()">Okay</button>
     </span>
   </div>
@@ -94,6 +99,14 @@
   <input type="button" class="ai-start-btn" onclick="startVideo()" value="Start AI"></input>
   <div class="vidbox">
     <video id="video" width="720" height="560" autoplay muted></video>
+    <svg class="vidicon" width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M17.66 21.78H6.34a4.13 4.13 0 0 1-4.13-4.13V6.33A4.13 4.13 0 0 1 6.34 2.2h11.32a4.13 4.13 0 0 1 4.13 4.13v11.32a4.13 4.13 0 0 1-4.13 4.13ZM6.34 3.7a2.63 2.63 0 0 0-2.63 2.63v11.32a2.63 2.63 0 0 0 2.63 2.63h11.32a2.63 2.63 0 0 0 2.63-2.63V6.33a2.63 2.63 0 0 0-2.63-2.63H6.34Z"
+        fill="#000" />
+      <path
+        d="M8.19 12.94a2.91 2.91 0 1 1 2.9-2.9 2.901 2.901 0 0 1-2.9 2.9Zm0-4.31a1.41 1.41 0 1 0-.019 2.82 1.41 1.41 0 0 0 .019-2.82ZM16 12.94a2.91 2.91 0 1 1-.02-5.82 2.91 2.91 0 0 1 .02 5.82Zm0-4.31a1.41 1.41 0 1 0-.059 2.82A1.41 1.41 0 0 0 16 8.63Zm0 8.79H8.19a.75.75 0 1 1 0-1.5H16a.75.75 0 1 1 0 1.5Z"
+        fill="#000" />
+    </svg>
   </div>
 
   <script>
@@ -102,6 +115,7 @@
       document.body.addEventListener('click', function (event) {
         console.log('clicked')
         document.querySelector(".noti-box").style.display = "none";
+        document.querySelector(".vidicon").style.display = "none";
       })
     }
     popOff()
