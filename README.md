@@ -7,11 +7,15 @@ This program uses FaceAPI JS Library to recognize your mood based on your facial
 - Click on 'Start AI'
 - Allow accessing camera
   
-![Preview1](./assets/faceaiinterface.png)
+<p align="center">
+  <img style="border-radius:9px;" src="./assets/faceaiinterface.png" />
+</p>
 
 ## AI Overview
 
-<span style="display:block; text-align:center; border-radius:9px;"><img src="./assets/Facial-AI.gif" /></span>
+<p align="center">
+  <img style="border-radius:9px;" src="./assets/Facial-AI.gif" />
+</p>
 
 
 ## Acknowledgements
