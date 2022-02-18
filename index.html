@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Facial Reaction Recognizer</title>
+  <script defer src="face-api.min.js"></script>
+  <script defer src="script.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    canvas {
+      position: absolute;
+    }
+
+    .vidbox {
+      border: 5px solid #f2c500;
+
+      border-radius: 9px;
+      background-color: #f2c500;
+      padding: 0 10px;
+      box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    }
+
+    video {
+      border-radius: 14px;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      box-sizing: border-box;
+    }
+
+    .ai-start-btn {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      padding: 10px 18px;
+      color: black;
+      background-color: #f2c500;
+      cursor: pointer;
+      border-radius: 4px;
+      border: 2px black solid;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <button class="ai-start-btn" onclick="startVideo()">Start AI</button> -->
+
+  <input type="button" class="ai-start-btn" onclick="startVideo()" value="Start AI"></input>
+  <div class="vidbox">
+    <video id="video" width="720" height="560" autoplay muted></video>
+  </div>
+</body>
+
+</html>
