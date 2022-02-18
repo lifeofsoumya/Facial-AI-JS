@@ -12,6 +12,7 @@ This program uses FaceAPI JS Library to recognize your mood based on your facial
 ## AI Overview
 
 ![Preview2](./assets/Facial-AI.gif)
+<div style="text-align:center"><img src="./assets/Facial-AI.gif" /></div>
 
 
 ## Acknowledgements
