@@ -2,8 +2,13 @@
 
 This program uses FaceAPI JS Library to recognize your mood based on your facial reaction. To make it much simpler I've added some extra functions to it.
 
-## Demo
+## Interface
+- Click on anywhere to close the popup
+- Click on 'Start AI'
+- Allow accessing camera
+  
+![Preview1](./assets/faceaiinterface.png)
 
+## AI Overview
 
-![Preview1](./assets/facial-ai-js.jpg)
 ![Preview2](./assets/Facial-AI.gif)
