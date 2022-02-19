@@ -12,6 +12,10 @@ This program uses FaceAPI JS Library to recognize your mood based on your facial
 </p>
 
 ## AI Overview
+`
+Check out a demo version of the AI on MetaTool
+`
+[![Open in MetaTool](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://metatool.in/faceai.html)
 
 <p align="center">
   <img style="border-radius:9px;" src="./assets/Facial-AI.gif" />
